@@ -1,0 +1,15 @@
+baseURL = 'https://noteven.github.io/'
+languageCode = 'en-us'
+title = 'noteven but odd'
+enableGitInfo = true
+disableKinds = ['taxonomy', 'taxonomyTerms']
+ignoreErrors = ["error-disable-taxonomy"]
+
+[module]
+[[module.imports]]
+path = 'github.com/alex-shpak/hugo-book'
+
+[params]
+BookTheme = 'auto'
+BookRepo = 'https://github.com/noteven/noteven.github.io'
+BookFormat = '02/01/2006'
