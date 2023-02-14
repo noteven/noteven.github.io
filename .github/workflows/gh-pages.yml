@@ -30,7 +30,7 @@ jobs:
 
       - name: Hugo Vendor
         if: steps.cache-hugo-mods.outputs.cache-hit != 'true'
-        run: hugo vendor
+        run: hugo mod vendor
 
       - name: Build
         run: hugo --minify

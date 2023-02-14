@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'noteven but odd'
 enableGitInfo = true
 disableKinds = ['taxonomy', 'taxonomyTerms']
-ignoreErrors = ["error-disable-taxonomy"]
+ignoreErrors = ['error-disable-taxonomy']
 
 [module]
 [[module.imports]]
