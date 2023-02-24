@@ -1,9 +1,23 @@
 baseURL = 'https://noteven.github.io/'
-languageCode = 'en-us'
 title = 'noteven but odd'
 enableGitInfo = true
 disableKinds = ['taxonomy', 'taxonomyTerms']
 ignoreErrors = ['error-disable-taxonomy']
+
+[markup.tableOfContents]
+  startLevel = 1
+
+[menu]
+# [[menu.before]]
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/noteven"
+  weight = 10
+
+[[menu.after]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/nelson-bermudez-bassett/"
+  weight = 20
 
 [module]
 [[module.imports]]
