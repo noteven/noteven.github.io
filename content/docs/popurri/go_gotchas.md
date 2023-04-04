@@ -186,18 +186,15 @@ func valueToPointer[T any](val T) *T {
 
 # Channels (writing/reading closed channels, ranging over channels that don't close, )
 
+# Details not covered
+Some details that aren't covered which might be of interest to the reader include:
+- Floating point
+- rune iteration of string (range for) vs byte iteration (indexed for)
+- length of strings (runes being multibyte, length being byte based, "unicode/utf8")
+- string comparisons (NFC vs NFD encoding, using "golang.org/x/text/unicode/norm")
+- pointer channels (make(chan Type) vs make(chan *T))
+
 # Bibliography
 Bodner, Jon. _Learning Go: An Idiomatic Approach to Real-World Go Programming_. First ed., O'Reilly, 2022.  
 Harsanyi, Teiva. _100 Go Mistakes and How to Avoid Them_. Manning Publications Co, 2022.  
 Tebeka, Miki. Go _Brain Teasers_. Edited by Margaret Eldridge, P1.0 ed., Pragmatic Bookshelf, 2021.  
-
-Floating point
-rune iteration of string
-rune comparison
-length of strings (runes being multibyte, length being byte based, "unicode/utf8")
-string comparisons (NFC vs NFD encoding, using "golang.org/x/text/unicode/norm")
-byte len
-nil maps
-floating point errors
-converting numbers to strings (string(169))
-pointer channels (make(chan Type) vs make(chan *T))
